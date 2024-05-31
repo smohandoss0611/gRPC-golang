@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package product;
+
+option go_package = "github.com/smohandoss0611/gRPC-golang/productservice/productpb";
+
+message Product {
+  int32 id = 1;
+  string name = 2;
+  double usdPerUnit = 3;
+  string unit = 4;
+}
+
